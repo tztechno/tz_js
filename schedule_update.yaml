@@ -1,0 +1,39 @@
+//https://github.com/code4fukui/tidelevel/blob/main/.github/workflows/scheduled-update.yml
+
+name: Scheduled update
+
+//workflow_dispatch: ワークフローの手動トリガーを許可します。
+//スケジュール: 指定された cron 式に基づいて 1 時間ごとに実行されるようにスケジュールされます。
+//cron 式 5 * * * * は、ワークフローを毎時 5 分に実行することを指定します。
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 10分間隔で実行
+    #- cron: '*/10 * * * *'
+    # 1時間間隔で実行
+    - cron: '5 * * * *'
+
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+
+//-A フラグ (すべての権限を許可) を指定して Deno を使用して、download.js スクリプトを実行します。          
+      - name: make
+        run: |
+          deno run -A download.js
+      - name: commit and push
+        run: |
+          git config --global user.email "workflow@example.com"
+          git config --global user.name "workflow user"
+          git add .
+          git commit -m 'update data' && git push ${REPO} HEAD:${{github.event.pull_request.head.ref}} || true
+          git push
