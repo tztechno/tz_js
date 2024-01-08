@@ -6,22 +6,14 @@ const input = fs.readFileSync(filePath).toString().split("\n");
 const N = parseInt(input[0]); // 日付の個数
 const T = input.slice(1,1+N); // 日付の文字列配列
 
-function inputDates() {;
-    if (T.length === N) {
-      convertAndPrintDates(T);
-    } else {
-      inputDates();
-  }
-}
-
-inputDates();
-
-function convertAndPrintDates(T) {
+function convertDates(T) {
   const dateObjects = T.map(t_str => new Date(t_str));
   dateObjects.forEach(dateObj => {
   console.log(dateObj.toISOString());
   });
 }
+
+convertDates();
 
 #####################################
 
