@@ -1,9 +1,18 @@
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
+ <script src="https://cdn.jsdelivr.net/gh/gokertanrisever/leaflet-ruler@master/src/leaflet-ruler.js"
+  integrity="sha384-N2S8y7hRzXUPiepaSiUvBH1ZZ7Tc/ZfchhbPdvOE5v3aBBCIepq9l+dBJPFdo1ZJ" crossorigin="anonymous"></script>
 //////////////////////////////////////////////////////
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 //////////////////////////////////////////////////////
+<script src="/assets/google_tag_manager_cross_sectional-31b36caf9ab599e6c1bf875a2fb843f905d4b00f9ea08ee6cbcc33530f520eaa.js"></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=G-59XEMD0N98" async="async"></script><script>
 //////////////////////////////////////////////////////
+<script type='text/javascript' src='https://www.kobejrc.jp/admin/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.kobejrc.jp/admin/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 //////////////////////////////////////////////////////
 <script src="/js/jquery.js"></script>
 <script id=pt_loader src="/js/ewbc.min.js"></script>
