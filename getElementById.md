@@ -3,10 +3,10 @@
 ---
 
 ### 1. document.getElementById('result').innerText
-
+```
 用途: テキスト内容を取得または設定するために使用されます。
 操作: 要素の内部のテキストを取得したり、新しいテキストを設定することができます。
-
+```
 ```
 
 'result'要素のテキスト内容を取得
@@ -20,10 +20,10 @@ document.getElementById('result').innerText = "新しいテキスト";
 ---
 
 ### 2. document.getElementById('inputN').value
-
+```
 用途: フォーム要素（入力フィールド）の値を取得または設定するために使用されます。
 操作: ユーザーが入力した値を取得したり、新しい値を設定することができます。
-
+```
 ```
 
 'inputN'入力フィールドの値を取得
