@@ -1,4 +1,5 @@
 
+---
 1. document.getElementById('result').innerText
 
 用途: テキスト内容を取得または設定するために使用されます。
@@ -12,6 +13,8 @@ var text = document.getElementById('result').innerText;
 // 'result'要素のテキスト内容を設定
 document.getElementById('result').innerText = "新しいテキスト";
 ```
+
+---
 
 2. document.getElementById('inputN').value
 
@@ -27,4 +30,4 @@ var value = document.getElementById('inputN').value;
 document.getElementById('inputN').value = "新しい値";
 ```
 
-
+---
